@@ -1,6 +1,6 @@
 ## Password Generator App
 
-Live Site URL - [](https://cute-tulumba-2cbfc8.netlify.app/)
+Live Site URL - [Password Generator](https://cute-tulumba-2cbfc8.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
