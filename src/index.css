@@ -1,13 +1,108 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  border: #352f44 2px solid;
+  padding: 30px;
+  border-radius: 5px;
+  /* From https://css.glass */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #352f44;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="range"],
+input[type="checkbox"] {
+  accent-color: #352f44;
+}
+
+.charLength {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.charLength span {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-weight: 700;
+  padding: 15px 0;
+  padding-bottom: 0;
+}
+
+.checkboxes div {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+}
+
+.checkboxes label {
+  cursor: pointer;
+}
+
+.generateBtn {
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.errorMessage {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: red;
+}
+
+.password-strength {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 20px;
+  font-weight: 700;
 }
